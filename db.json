@@ -1,0 +1,428 @@
+{
+  "trekDetails": [
+    {
+      "id": 1,
+      "title": "Pawna Lake Camping",
+      "image": "/assets/camp/list (1).jpg",
+      "date": "9 December 2024",
+      "location": "Pune, Mumbai",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1399,
+      "discount": "29% off",
+      "discountedPrice": 999,
+      "link": "/Pawna-Lake-Camping-10"
+    },
+    {
+      "id": 2,
+      "title": "Panshet Dam Camping",
+      "image": "/assets/camp/list (2).jpg",
+      "date": "9 December 2024",
+      "location": "Pune, Mumbai",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1199,
+      "discount": "17% off",
+      "discountedPrice": 999,
+      "link": "/Panshet-Dam-Camping-24"
+    },
+    {
+      "id": 3,
+      "title": "Pawna Riverside Camping",
+      "image": "/assets/camp/list (1).jpg",
+      "date": "9 December 2024",
+      "location": "Pune, Mumbai",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1499,
+      "discount": "20% off",
+      "discountedPrice": 1199,
+      "link": "/Pawna-Riverside-Camping-18"
+    },
+    {
+      "id": 4,
+      "title": "Alibaug Nagaon Beach Camping",
+      "image": "/assets/camp/list (1).jpg",
+      "date": "9 December 2024",
+      "location": "Pune, Mumbai",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1799,
+      "discount": "28% off",
+      "discountedPrice": 1299,
+      "link": "/Alibaug-Nagaon-Beach-Camping-104"
+    },
+    {
+      "id": 6,
+      "title": "Bhandardara Camping",
+      "image": "/assets/camp/list (1).jpg",
+      "date": "13 December 2024",
+      "location": "Mumbai, Nashik",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1499,
+      "discount": "27% off",
+      "discountedPrice": 1099,
+      "link": "/Bhandardara-Camping-12"
+    },
+    {
+      "id": 7,
+      "title": "Malshej Ghat Lakeside Camping",
+      "image": "/assets/camp/list (1).jpg",
+      "date": "10 December 2024",
+      "location": "Pune, Mumbai",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1499,
+      "discount": "13% off",
+      "discountedPrice": 1299,
+      "link": "/Malshej-Ghat-Lakeside-Camping-81"
+    },
+    {
+      "id": 8,
+      "title": "Alibaug Beach Camping",
+      "image": "/assets/camp/list (1).jpg",
+      "date": "10 December 2024",
+      "location": "Pune, Mumbai",
+      "duration": "1 Day / 1 Night",
+      "originalPrice": 1499,
+      "discount": "20% off",
+      "discountedPrice": 1199,
+      "link": "/Alibaug-Beach-Camping-61"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "title": "Mumbai To Alibaug Ferry – Time, Prices & Tickets",
+      "excerpt": "Alibaug is a seashore jungle gym for India’s rich, popular and invigorating Mumbai escape. It’s possible to enjoy Alibaug in a day or two.",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/08/Ferry-service_20200315-e1678656897657-300x200.jpg",
+      "link": "https://www.weekendfeels.com/blog/mumbai-to-alibaug-ferry-time-prices-tickets"
+    },
+    {
+      "id": 2,
+      "title": "Nandi Hills – Timing, Location & How To Reach",
+      "excerpt": "A gem of beauty, filled with flavors of history, is nothing but Nandi Hills. Also known as Nandidurga, this heaven on earth is home to...",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/05/1-300x183.jpg",
+      "link": "https://www.weekendfeels.com/blog/nandi-hills"
+    },
+    {
+      "id": 3,
+      "title": "8 Best Resorts in Alwar",
+      "excerpt": "Alwar, the city of handicrafts, arts, and jewellery is also known for its historical significance and architecture. Majorly popular for its magnificent marble pavilions based.",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/04/Alwar-Resorts-1-300x240.jpg",
+      "link": "https://www.weekendfeels.com/blog/alwar-resorts"
+    },
+    {
+      "id": 4,
+      "title": "7 Best Resorts in Jodhpur",
+      "excerpt": "Jodhpur is nothing but a blue paradise! Famously known as the blue city, it is the second-largest city in Rajasthan. Jodhpur’s architecture, residences, unique attractions.",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/04/Jodhpur-Resorts-300x240.jpg",
+      "link": "https://www.weekendfeels.com/blog/jodhpur-resorts"
+    },
+    {
+      "id": 5,
+      "title": "Best Resorts in Udaipur",
+      "excerpt": "Udaipur, known for its scenic lakes, royal palaces, and vibrant culture, is one of the most sought-after destinations in Rajasthan for a luxurious resort stay.",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/03/Resort-Banner-Blog-4-300x240.jpg",
+      "link": "https://www.weekendfeels.com/blog/udaipur-resorts"
+    },
+    {
+      "id": 6,
+      "title": "8 Best Resorts in Ajmer",
+      "link": "https://www.weekendfeels.com/blog/ajmer-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/03/Resort-Banner-Blog-3-300x240.jpg",
+      "excerpt": "Famously known for its multi-religious historical monuments, Ajmer is one of the most visited tourist places in India..."
+    },
+    {
+      "id": 7,
+      "title": "Best Resorts in Pushkar",
+      "link": "https://www.weekendfeels.com/blog/pushkar-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/03/Resort-Banner-Blog-1-300x240.jpg",
+      "excerpt": "Pushkar, the rose garden of Rajasthan is known for more than one thing. For its heritage, mythological history..."
+    },
+    {
+      "id": 8,
+      "title": "Resorts in Jaisalmer",
+      "link": "https://www.weekendfeels.com/blog/jaisalmer-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/03/Resort-Banner-Blog-300x240.jpg",
+      "excerpt": "Jaisalmer is famous for its golden fort and desert resorts. The place has an aura of history and adventure..."
+    },
+    {
+      "id": 9,
+      "title": "11 Best Resorts in Pune",
+      "link": "https://www.weekendfeels.com/blog/pune-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/11/Resort-Banner-Blog-2-300x240.jpg",
+      "excerpt": "Very well known for its cultural heritage, food, and beautiful trip destinations, Pune City represents completeness and warmth. If you are a Punekar or someone"
+    },
+    {
+      "id": 10,
+      "title": "8 Best Resorts in Jaipur",
+      "link": "https://www.weekendfeels.com/blog/jaipur-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/01/Resort-Banner-Blog-1-300x240.png",
+      "excerpt": "Jaipur! The city of astonishing architecture, brilliant arts, crafts, jewelry, and fabrics, and fascinating monuments like the Hawa Mahal and Amber Palace! The pink city"
+    },
+    {
+      "id": 11,
+      "title": "Nashik Wineries & Vineyards",
+      "link": "https://www.weekendfeels.com/blog/nashik-wineries-vineyards",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2024/01/Color-Project-School-Photo-Collage-300x240.jpg",
+      "excerpt": "Explore the rich culture of Nashik wineries and vineyards, offering a serene escape with picturesque views and fine wines."
+    },
+    {
+      "id": 12,
+      "title": "Panshet Dam – How to Reach, Time & Prices",
+      "link": "https://www.weekendfeels.com/blog/panshet-dam-how-to-reach-time-prices",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/WeekendFeels-Panshet-Dam-300x240.png",
+      "excerpt": "Are you a mountain person? Are you looking for a short break from your daily grind at a green spot? If you do, this word"
+    },
+    {
+      "id": 13,
+      "title": "11 Best Resorts in Nashik",
+      "link": "https://www.weekendfeels.com/blog/nashik-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/11/Resort-Banner-Blog-1-300x240.jpg",
+      "excerpt": "Nashik is the city of bliss, serenity, and grapes! Also famously known as India’s Wine capital..."
+    },
+    {
+      "id": 14,
+      "title": "11 Best Resorts in Nagpur",
+      "link": "https://www.weekendfeels.com/blog/nagpur-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/11/Resort-Banner-Blog-300x240.jpg",
+      "excerpt": "Known as the city of oranges, Nagpur is also famous for its education hub, historical monuments..."
+    },
+    {
+      "id": 15,
+      "title": "6 Best Resorts in Bhandardara",
+      "link": "https://www.weekendfeels.com/blog/best-bhandardara-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Best-Resorts-in-Bhandardara-300x240.png",
+      "excerpt": "Are you thinking about where to take off this weekend? Quit stressing over your troubles and exploit the extended rain this year. It is by"
+    },
+    {
+      "id": 16,
+      "title": "11 Best Resorts In Pawna",
+      "link": "https://www.weekendfeels.com/blog/pawna-best-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/09/Best-Resorts-in-Pawna-300x240.png",
+      "excerpt": "Pawna lake, also known as Pawna Dam Reservoir is a stunning water body in Maharashtra. Popular for its beauty and camping site, this weekend’s getaway"
+    },
+    {
+      "id": 17,
+      "title": "Alibaug Resorts – Prices, Location & Booking",
+      "link": "https://www.weekendfeels.com/blog/alibaug-best-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Best-Resorts-in-Alibaug-300x240.png",
+      "excerpt": "Alibaug, popularly known as, the coastal town of Mumbai, is one of the perfect weekend getaways in Maharashtra. Travel enthusiasts and tourists from Mumbai and..."
+    },
+    {
+      "id": 18,
+      "title": "11 Best Resorts in Rishikesh",
+      "link": "https://www.weekendfeels.com/blog/rishikesh-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/07/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-5-300x240.png",
+      "excerpt": "In the heart of nature, Rishikesh offers an enchanting experience for peace and adventure seekers alike..."
+    },
+    {
+      "id": 19,
+      "title": "9 Best Restaurants in Igatpuri",
+      "link": "https://www.weekendfeels.com/blog/igatpuri-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/07/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-300x240.png",
+      "excerpt": "Igatpuri is nothing less than heaven on earth. Especially in the monsoon and winter seasons, Igatpuri turns into a place where any person would instantly..."
+    },
+    {
+      "id": 20,
+      "title": "Sula Vineyards Nashik – Prices, Timings & Stays",
+      "link": "https://www.weekendfeels.com/blog/sula-vineyards",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/11/Color-Project-School-Photo-Collage-1-1-300x240.jpg",
+      "excerpt": "Sula Vineyard is a very famous winery from Nashik. It has established its name across national and international boundaries as a pioneer of mass wine..."
+    },
+    {
+      "id": 21,
+      "title": "Unexplored Places in Maharashtra",
+      "link": "https://www.weekendfeels.com/blog/unexplored-places-in-maharashtra",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-28-at-14.26.36-300x240.jpeg",
+      "excerpt": "Discover the hidden gems of Maharashtra that await travelers with their untapped beauty and cultural richness..."
+    },
+
+    {
+      "id": 22,
+      "title": "Panshet Resorts – Prices, Location & Booking",
+      "link": "https://www.weekendfeels.com/blog/panshet-best-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Best-Resorts-in-Panshet-300x240.png",
+      "excerpt": "In the embrace of nature, everything feels blissful and refreshing! Panshet is no less than heaven..."
+    },
+    {
+      "id": 23,
+      "title": "Best Restaurants in Bhandardara",
+      "link": "https://www.weekendfeels.com/blog/bhandardara-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/08/Resort-Banner-Blog-300x240.jpg",
+      "excerpt": "Situated near Nashik, Bhandardara is a winter and rainy season tourist spot in Maharashtra..."
+    },
+    {
+      "id": 24,
+      "title": "Best Restaurants in Malshej",
+      "link": "https://www.weekendfeels.com/blog/malshej-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/08/Resort-Banner-Blog-2-300x240.jpg",
+      "excerpt": "Explore the beauty of Malshej along with its finest restaurants offering local cuisine..."
+    },
+    {
+      "id": 25,
+      "title": "4 Best Restaurants in Panshet",
+      "link": "https://www.weekendfeels.com/blog/panshet-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/08/Resort-Banner-Blog-1-300x240.jpg",
+      "excerpt": "Panshet, a paradise-like spot is not only famous but also very much worthy for every rainy and winter holiday! Filled with lush greenery, water bodies..."
+    },
+    {
+      "id": 26,
+      "title": "11 Best Restaurants in Dapoli",
+      "link": "https://www.weekendfeels.com/blog/dapoli-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/07/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-4-300x240.png",
+      "excerpt": "Dapoli is a tourist paradise located in Ratnagiri district. Known for its beauty-filled surroundings, endless spotless beaches, lush greenery, and historical monuments..."
+    },
+    {
+      "id": 27,
+      "title": "Top Restaurants in Mahabaleshwar",
+      "link": "https://www.weekendfeels.com/blog/mahabaleshwar-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/07/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-2-300x240.png",
+      "excerpt": "Mahabaleshwar offers a delightful experience to food lovers. From local Maharashtrian flavors to multi-cuisine delights, you’ll find something amazing at every corner..."
+    },
+    {
+      "id": 28,
+      "title": "12 Best Restaurants near Pawna Lake",
+      "link": "https://www.weekendfeels.com/blog/pawna-lake-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/07/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-3-300x240.png",
+      "excerpt": "Pawna Lake is a beautiful picnic destination near Pune. Filled with a beautiful climate and scenic landscapes, having a joyful getaway is given! But Pawna..."
+    },
+    {
+      "id": 29,
+      "title": "12 Best Restaurants in Alibaug",
+      "link": "https://www.weekendfeels.com/blog/alibaug-restaurants",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/07/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-1-300x240.png",
+      "excerpt": "Known for its beautiful beaches and amazing climate, Alibaug is a go-to place for all beach lovers in Maharashtra. If you are planning to reach..."
+    },
+    {
+      "id": 30,
+      "title": "Camping Vs. Glamping in Pawna- What to choose?",
+      "link": "https://www.weekendfeels.com/blog/camping-vs-glamping",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/10/Color-Project-School-Photo-Collage-300x240.jpg",
+      "excerpt": "Are you a traveler who has been to campsites quite a few times? Have you recently encountered the term glamping and wanted to explore it"
+    },
+    {
+      "id": 31,
+      "title": "Top 6 Places to Visit near Pawna Lake",
+      "link": "https://www.weekendfeels.com/blog/places-near-pawna-lake",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Places-Near-Pawna-Lake-300x240.png",
+      "excerpt": "Pawna lake is one of the famous tourist spots in Maharashtra. It is famous not only for the best view but additionally because of a"
+    },
+    {
+      "id": 32,
+      "title": "10 Best Resorts in Igatpuri",
+      "link": "https://www.weekendfeels.com/blog/igatpuri-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Best-Resorts-in-Igatpuri-300x240.png",
+      "excerpt": "For a stay close to nature, the resorts in Igatpuri offer an excellent combination. It is with first-class services. Hospitality is paramount. These resorts ensure"
+    },
+
+    {
+      "id": 33,
+      "title": "11 Best Things To Do In Igatpuri",
+      "link": "https://www.weekendfeels.com/blog/igatpuri-things-to-do",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Places-Near-Igatpuri-300x240.png",
+      "excerpt": "Igatpuri is a beautiful hill station. It is one of the most famous weekend destinations in Maharashtra. Igatpuri is located near Nashik in Maharashtra."
+    },
+    {
+      "id": 34,
+      "title": "9 Best Things To Do In Bhandardara",
+      "link": "https://www.weekendfeels.com/blog/bhandardara-things-to-do",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/08/Alpine-Adventures-Photo-Collage-1-300x240.png",
+      "excerpt": "Are you frustrated by your hectic work schedule? Then a nature camp is the best way to cool off. In simple words, camping is an ideal way to rejuvenate."
+    },
+    {
+      "id": 35,
+      "title": "11 Best Camping Options Near Pune and Mumbai",
+      "link": "https://www.weekendfeels.com/blog/best-camping-near-mumbai-pune",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/08/Best-Camping-Options-Near-Mumbai-and-Pune-300x240.png",
+      "excerpt": "From the picturesque mountains to the natural Konkan coastal strip, Maharashtra is a breathtaking sight. It is a paradise for explorers; the state is renowned"
+    },
+    {
+      "id": 36,
+      "title": "Best Pawna Lake Camping For Couples",
+      "link": "https://www.weekendfeels.com/blog/best-pawna-lake-camping",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/03/Alpine-Adventures-Photo-Collage-300x240.png",
+      "excerpt": "Imagine sitting near a warm fire on a cold night, gazing at the stars in the sky with your loved one! Magical right? Have you"
+    },
+    {
+      "id": 37,
+      "title": "6 Best Resorts in Bhandardara",
+      "link": "https://www.weekendfeels.com/blog/best-bhandardara-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Best-Resorts-in-Bhandardara-300x240.png",
+      "excerpt": "Are you thinking about where to take off this weekend? Quit stressing over your troubles and exploit the extended rain this year. It is by"
+    },
+    {
+      "id": 38,
+      "title": "8 Best Resorts in Ramanagara",
+      "link": "https://www.weekendfeels.com/blog/ramanagara-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/04/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-1-300x240.png",
+      "excerpt": "A town of history, nature and culture, Ramanagara is one of the famous tourist places in Karnataka. Situated only about 50 km away from Bangalore,"
+    },
+    {
+      "id": 39,
+      "title": "9 Best Resorts in Nandi Hills",
+      "link": "https://www.weekendfeels.com/blog/nandi-hills-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/04/White-Grid-and-Salmon-Pink-Brush-Stroke-Summer-Mood-Board-Photo-Collage-300x240.png",
+      "excerpt": "Nestled 60 km away from the city of Bangalore is the Nandi Hills. The town earns its name from the famous Shiva shrine of Bhoga"
+    },
+    {
+      "id": 40,
+      "title": "Dapoli Beach – Beauty, Water Sports & more",
+      "link": "https://www.weekendfeels.com/blog/dapoli-beach-beauty-water-sports-more",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/07/Dapoli-Beach-300x240.png",
+      "excerpt": "Introduction Are you caught between selecting beaches in Maharashtra for your holiday? If yes, here’s an answer to your question along with, why it would"
+    },
+    {
+      "id": 41,
+      "title": "12 Best Resorts In Mahabaleshwar Resorts",
+      "link": "https://www.weekendfeels.com/blog/mahabaleshwar-best-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/08/Mahabaleshwar-Title-300x240.png",
+      "excerpt": "Nestled in the clutches of the Western Ghats range, is the hill station of Mahabaleshwar! Acclaimed as the land of strawberries and one of the"
+    },
+    {
+      "id": 42,
+      "title": "8 Best Resorts In Malshej Ghat",
+      "link": "https://www.weekendfeels.com/blog/malshej-ghat-best-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2022/08/Best-Resorts-in-Malshej-300x240.png",
+      "excerpt": "Malshej Ghat is home to forests, beautiful nature, waterfalls, and countless species of flora and fauna! Located in the Thane district, on the Kalyan-Ahmednagar Road"
+    },
+    {
+      "id": 43,
+      "title": "Zoos In Maharashtra",
+      "link": "https://www.weekendfeels.com/blog/zoos-in-maharashtra",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/01/w-300x240.png",
+      "excerpt": "Maharashtra is renowned for its stunning natural beauty and extensive cultural legacy. Maharashtra, a state that extends a warm welcome to nature and animal lovers"
+    },
+    {
+      "id": 44,
+      "title": "10 Best Resorts in Malvan",
+      "link": "https://www.weekendfeels.com/blog/malvan-resorts",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/02/best-resort-in-Malvan-1-300x240.png",
+      "excerpt": "Home to the spectacular Sindhudurg Fort, Malvan, a tiny town in Maharashtra, is becoming widely popular as a tourist destination. If you’ve heard of the"
+    },
+    {
+      "id": 45,
+      "title": "Best Temples in Maharashtra",
+      "link": "https://www.weekendfeels.com/blog/temples-in-maharashtra",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2023/03/Alpine-Adventures-Photo-Collage-1-300x240.png",
+      "excerpt": "In addition to being home to some of the most famous trip locations as well as cosmopolitan cities in the nation, Maharashtra is endowed with"
+    },
+    {
+      "id": 46,
+      "title": "Pawna Lake Camping – Booking, How To Reach and More",
+      "link": "https://www.weekendfeels.com/blog/pawna-lake-camping-all-you-need-to-know",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2020/10/Alpine-Adventures-Photo-Collage-300x240.png",
+      "excerpt": "Pawna Lake, also known as Pavana Dam Reservoir and Pawna Lake, is an artificial lake in the Pune district. Pawna Lake is increasingly getting popular as a picnic"
+    },
+    {
+      "id": 47,
+      "title": "Tiger Point Lonavala",
+      "link": "https://www.weekendfeels.com/blog/tiger-point-lonavala",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/10/Alpine-Adventures-Photo-Collage-300x240.png",
+      "excerpt": "Need a break? Let’s go for an outing. No need to search many spots. Tiger point near Lonavala is the best place to relax. Winds"
+    },
+    {
+      "id": 48,
+      "title": "Lonavla Wax Museum",
+      "link": "https://www.weekendfeels.com/blog/lonavla-wax-museum",
+      "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/08/DqHRIgqX0AALTyM-300x206.jpg",
+      "excerpt": "Lonavla Wax Museum- Lonavla is one of the popular tourist destinations located in the Sahyadri Hills of Maharashtra. It is located near Pune and Mumbai and is"
+    }
+  ]
+}
