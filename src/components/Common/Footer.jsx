@@ -67,42 +67,36 @@ const Footer = () => {
             <VStack align="flex-start" spacing={4}>
               <Link
                 href="/about"
-                target="_blank"
                 _hover={{ color: "white", textDecoration: "none" }}
               >
                 About Us
               </Link>
               <Link
                 href="/tnc"
-                target="_blank"
                 _hover={{ color: "white", textDecoration: "none" }}
               >
                 Terms &amp; Conditions
               </Link>
               <Link
                 href="/privacy"
-                target="_blank"
                 _hover={{ color: "white", textDecoration: "none" }}
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/news"
-                target="_blank"
                 _hover={{ color: "white", textDecoration: "none" }}
               >
                 News
               </Link>
               <Link
                 href="/careers"
-                target="_blank"
                 _hover={{ color: "white", textDecoration: "none" }}
               >
                 Careers
               </Link>
               <Link
                 href="/influencer"
-                target="_blank"
                 bgClip="text"
                 bgGradient="linear(to-r, #fc01d7, #ff7c9d)"
               >

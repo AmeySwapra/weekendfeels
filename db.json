@@ -10,7 +10,7 @@
       "originalPrice": 1399,
       "discount": "29% off",
       "discountedPrice": 999,
-      "link": "/Pawna-Lake-Camping-10"
+      "link": "pawna-lake"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "originalPrice": 1199,
       "discount": "17% off",
       "discountedPrice": 999,
-      "link": "/Panshet-Dam-Camping-24"
+      "link": "panshet-dam"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "originalPrice": 1499,
       "discount": "20% off",
       "discountedPrice": 1199,
-      "link": "/Pawna-Riverside-Camping-18"
+      "link": "pawna-river"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "originalPrice": 1799,
       "discount": "28% off",
       "discountedPrice": 1299,
-      "link": "/Alibaug-Nagaon-Beach-Camping-104"
+      "link": "alibaug-navegaon"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "originalPrice": 1499,
       "discount": "27% off",
       "discountedPrice": 1099,
-      "link": "/Bhandardara-Camping-12"
+      "link": "bhandardara"
     },
     {
       "id": 7,
@@ -70,7 +70,7 @@
       "originalPrice": 1499,
       "discount": "13% off",
       "discountedPrice": 1299,
-      "link": "/Malshej-Ghat-Lakeside-Camping-81"
+      "link": "malshej"
     },
     {
       "id": 8,
@@ -82,7 +82,7 @@
       "originalPrice": 1499,
       "discount": "20% off",
       "discountedPrice": 1199,
-      "link": "/Alibaug-Beach-Camping-61"
+      "link": "alibag-beach"
     }
   ],
   "cards": [
@@ -423,6 +423,86 @@
       "link": "https://www.weekendfeels.com/blog/lonavla-wax-museum",
       "imageUrl": "https://www.weekendfeels.com/blog/wp-content/uploads/2021/08/DqHRIgqX0AALTyM-300x206.jpg",
       "excerpt": "Lonavla Wax Museum- Lonavla is one of the popular tourist destinations located in the Sahyadri Hills of Maharashtra. It is located near Pune and Mumbai and is"
+    }
+  ],
+
+  "campingData" : [
+    {
+      "id": 1,
+      "name": "Pawna Lake Camping",
+      "imageUrl": "img/gallery/11/list.jpg",
+      "originalPrice": 2999,
+      "finalPrice": 1799,
+      "lockPrice": 899,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "pawna-lake"
+    },
+    {
+      "id": 2,
+      "name": "Alibaug Beach Camping",
+      "imageUrl": "img/gallery/87/list.jpg",
+      "originalPrice": 2999,
+      "finalPrice": 1999,
+      "lockPrice": 999,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "alibag-beach"
+    },
+    {
+      "id": 3,
+      "name": "Panshet Dam Camping",
+      "imageUrl": "img/gallery/72/list.jpg",
+      "originalPrice": 2199,
+      "finalPrice": 1799,
+      "lockPrice": 899,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "panshet-dam"
+    },
+    {
+      "id": 4,
+      "name": "Alibaug Nagaon Beach Camping",
+      "imageUrl": "img/gallery/91/list.jpg",
+      "originalPrice": 2999,
+      "finalPrice": 1799,
+      "lockPrice": 899,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "alibaug-navegaon"
+    },
+    {
+      "id": 5,
+      "name": "Pawna Riverside Camping",
+      "imageUrl": "img/gallery/92/list.jpg",
+      "originalPrice": 2999,
+      "finalPrice": 1999,
+      "lockPrice": 999,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "pawna-river"
+    },
+    {
+      "id": 6,
+      "name": "Bhandardara camping",
+      "imageUrl": "img/gallery/93/list.jpg",
+      "originalPrice": 1799,
+      "finalPrice": 1499,
+      "lockPrice": 799,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "bhandardara"
+    },
+    {
+      "id": 7,
+      "name": "Malshej Ghat Lakeside camping",
+      "imageUrl": "img/gallery/94/list.jpg",
+      "originalPrice": 1999,
+      "finalPrice": 1299,
+      "lockPrice": 699,
+      "checkIn": "03:00 PM",
+      "checkOut": "11:00 AM",
+      "link": "malshej"
     }
   ]
 }

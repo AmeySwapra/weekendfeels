@@ -10,6 +10,15 @@ import NewsPage from "./pages/NewsPage";
 import TermsPage from "./pages/TermsPage";
 import InfulencerPage from "./pages/InfulencerPage";
 import BlogPage from "./pages/BlogPage";
+import NEY from "./pages/NEYPage";
+import SingleTrekPage from "./pages/SingleTrekPage";
+import PawnaRiver from "./pages/PawnaRiver";
+import Bhandara from "./pages/Bhandara";
+import Malshej from "./pages/Malshej";
+import AlibagBeach from "./pages/AlibagBeach";
+import PanchetDam from "./pages/PanchetDam";
+import Pwanalake from "./pages/Pwanalake";
+import AlibagNavgaon from "./pages/AlibagNavgaon";
 
 function App() {
   return (
@@ -26,6 +35,15 @@ function App() {
         <Route  path="/tnc" element={<TermsPage/>} />
         <Route  path="/influencer" element={<InfulencerPage/>} />
         <Route  path="/blog" element={<BlogPage/>} />
+        <Route  path="/nye25" element={<NEY/>} />
+        <Route  path="/single-trek" element={<SingleTrekPage/>} />
+        <Route  path="/pawna-river" element={<PawnaRiver/>} />
+        <Route  path="/bhandardara" element={<Bhandara/>} />
+        <Route  path="/malshej" element={<Malshej/>} />
+        <Route  path="/alibag-beach" element={<AlibagBeach/>} />
+        <Route  path="/panshet-dam" element={<PanchetDam/>} />
+        <Route  path="/pawna-lake" element={<Pwanalake/>} />
+        <Route  path="/alibaug-navegaon" element={<AlibagNavgaon/>} />
       </Routes>
       </BrowserRouter>
     </>

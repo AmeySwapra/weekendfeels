@@ -6,7 +6,6 @@ import {
   Grid,
   Image,
   Text,
-  Link,
   Icon,
   Badge,
   Divider,
@@ -21,6 +20,7 @@ import {
 import { FaCalendarCheck, FaMapSigns, FaClock } from "react-icons/fa";
 import DatePicker from "react-datepicker"; // import the date picker
 import "react-datepicker/dist/react-datepicker.css"; // import styles for date picker
+import { Link } from "react-router-dom";
 
 const TrekCard = ({ trek }) => {
   return (
@@ -42,7 +42,7 @@ const TrekCard = ({ trek }) => {
           },
         }}
       >
-        <Link href={trek.link} isExternal>
+        <Link to={`/${trek.link}`}>
           <Box textAlign="center" position="relative" overflow="hidden">
             {/* Image Container */}
             <Box
