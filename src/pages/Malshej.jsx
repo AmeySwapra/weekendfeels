@@ -58,8 +58,8 @@ function Malshej() {
       day: 'Day 2',
       events: [
         { time: '07:00 AM', activity: 'Wake up and leave for forest trek (1 hour duration)', icon: 'hiking' },
-        { time: '08:30 AM', activity: 'Tea and breakfast will be served', icon: 'breakfast' },
-        { time: '11:00 AM', activity: 'Checkout with sweet memories', icon: 'checkout' }
+        { time: '08:30 AM', activity: 'Tea and breakfast will be served', icon: 'tea' },
+        { time: '11:00 AM', activity: 'Checkout with sweet memories', icon: 'checkin' }
       ]
     }
   ];
@@ -73,7 +73,7 @@ function Malshej() {
         </Box>
         {/* TrekComponent with 30% width */}
         <Box flex="3">
-          <TrekComponent trekName="Malshej Ghat" />
+          <TrekComponent trekName="Malshej Ghat Lakeside camping" />
         </Box>
       </Flex>
 

@@ -121,7 +121,7 @@ const Footer = () => {
             <Image
               src={paymentLogo}
               alt="Payment Methods"
-              boxSize={{ base: "80px", md: "100px" }}
+             
             />
           </VStack>
         </Stack>

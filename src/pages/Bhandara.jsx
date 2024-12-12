@@ -97,7 +97,7 @@ function Bhandara() {
         {
           time: "08:00 AM",
           activity: "Have your breakfast and spend some time at the camp before checking out and bringing the camping to an end",
-          icon: "breakfast"
+          icon: "snacks"
         },
         {
           time: "09:00 AM",
@@ -107,7 +107,7 @@ function Bhandara() {
         {
           time: "11:00 AM",
           activity: "Checkout from the camp",
-          icon: "checkout"
+          icon: "checkin"
         }
       ]
     }
@@ -122,7 +122,7 @@ function Bhandara() {
         </Box>
         {/* TrekComponent with 30% width */}
         <Box flex="3">
-          <TrekComponent trekName="Bhandardara Camp" />
+          <TrekComponent trekName="Bhandardara camping" />
         </Box>
       </Flex>
 

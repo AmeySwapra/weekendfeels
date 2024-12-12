@@ -1,8 +1,12 @@
 import React from 'react';
 import { Box, Text, Flex, Heading, VStack, Divider, IconButton } from '@chakra-ui/react';
-import { FaCheckCircle, FaHiking, FaCoffee, FaSun, FaHome, FaMoon } from 'react-icons/fa';
+import { 
+  FaCheckCircle, FaHiking, FaCoffee, FaSun, FaHome, FaMoon, FaCampground, FaGuitar, FaMusic, FaFilm, FaAnchor, 
+  FaBreadSlice
+} from 'react-icons/fa';
 import { FiSunrise } from 'react-icons/fi';
-import { FaTents } from 'react-icons/fa6';
+import {  GiFireBowl, GiCampfire, GiWaterfall } from 'react-icons/gi';
+import { MdOutlineBeachAccess, MdOutlineKayaking, MdOutlineSportsHandball } from 'react-icons/md';
 
 const Timeline = ({ timelineData }) => {
   // Map event icons based on event.icon name
@@ -17,30 +21,55 @@ const Timeline = ({ timelineData }) => {
       case 'sunset':
         return <FaSun />;
       case 'tent':
-        return <FaTents />;  // Correct icon for tent
+        return <FaCampground />;
       case 'dinner':
         return <FaHome />;
       case 'night':
         return <FaMoon />;
       case 'sunrise':
-        return <FiSunrise />; // Correct icon for sunrise
+        return <FiSunrise />;
+      case 'kayaking':
+        return <MdOutlineKayaking/>
+      case 'raindance':
+        return <GiWaterfall />;
+      case 'joker':
+        return <FaFilm />;
+      case 'bbq':
+        return <GiFireBowl />;
+      case 'music':
+        return <FaMusic />;
+      case 'bonfire':
+        return <GiCampfire />;
+      case 'boat':
+        return <FaAnchor />;
+      case 'beach':
+        return <MdOutlineBeachAccess/>;
+      case 'movie':
+        return <FaFilm />;
+      case 'guitar':
+        return <FaGuitar />;
+        case 'snacks':
+        return <FaBreadSlice/>;
+        case 'sports':
+          return <MdOutlineSportsHandball/>
       default:
         return null;
     }
   };
+  
 
   return (
     <Box id="containerBox3" className="exp" p={4}>
       {/* Header Section */}
       <Box className="row" display="flex" justifyContent="space-between" alignItems="center" mb={6}>
-      <Box mb={4} w={'full'} bg="#0b7c8b" p={2} borderRadius="md">
-        <Heading size="md" color="white" textAlign="start" m={0}>
-        ITINERARY
-        </Heading>
-      </Box>
+        <Box mb={4} w={'full'} bg="#0b7c8b" p={2} borderRadius="md">
+          <Heading size="md" color="white" textAlign="start" m={0}>
+            ITINERARY
+          </Heading>
+        </Box>
         <Box className="col-md-3 col-sm-3 col-xs-3 text-right">
           <IconButton
-            icon={<FaSun />}  // You can replace this with any other icon if you prefer
+            icon={<FaSun />}
             aria-label="Toggle"
             variant="ghost"
             color="white"
@@ -67,13 +96,13 @@ const Timeline = ({ timelineData }) => {
                   p={4}
                   borderRadius="md"
                   boxShadow="sm"
-                  bg={idx % 2 === 0 ? 'white' : 'gray.100'}
+                  bg={idx % 2 === 0 ? 'white' : '#f0fffe'}
                 >
                   <Flex align="center" mb={2}>
                     <Box
                       mr={4}
-                      w={6}
-                      h={6}
+                      w={10}
+                      h={10}
                       bg="gray.300"
                       borderRadius="full"
                       display="flex"
@@ -82,7 +111,9 @@ const Timeline = ({ timelineData }) => {
                     >
                       {getIcon(event.icon)}
                     </Box>
-                    <Text fontSize="xl" fontWeight="bold">{event.time}</Text>
+                    <Box bg='#aaf5ff' color={'black'} p={2} borderRadius={'lg'}>
+                      <Text fontSize="md" fontWeight="light">{event.time}</Text>
+                    </Box>
                   </Flex>
                   <Text>{event.activity}</Text>
                 </Box>

@@ -19,6 +19,7 @@ import AlibagBeach from "./pages/AlibagBeach";
 import PanchetDam from "./pages/PanchetDam";
 import Pwanalake from "./pages/Pwanalake";
 import AlibagNavgaon from "./pages/AlibagNavgaon";
+import BookingPage from "./pages/BookingPage";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
         <Route  path="/influencer" element={<InfulencerPage/>} />
         <Route  path="/blog" element={<BlogPage/>} />
         <Route  path="/nye25" element={<NEY/>} />
-        <Route  path="/single-trek" element={<SingleTrekPage/>} />
+        <Route  path="/triund-trek" element={<SingleTrekPage/>} />
         <Route  path="/pawna-river" element={<PawnaRiver/>} />
         <Route  path="/bhandardara" element={<Bhandara/>} />
         <Route  path="/malshej" element={<Malshej/>} />
@@ -44,6 +45,7 @@ function App() {
         <Route  path="/panshet-dam" element={<PanchetDam/>} />
         <Route  path="/pawna-lake" element={<Pwanalake/>} />
         <Route  path="/alibaug-navegaon" element={<AlibagNavgaon/>} />
+        <Route  path="/booking" element={<BookingPage/>} />
       </Routes>
       </BrowserRouter>
     </>

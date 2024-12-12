@@ -114,7 +114,7 @@ function AlibagNavgaon() {
           time: "07:00 AM",
           activity:
             "Wake up, enjoy the sea breeze, freshen up, and have breakfast",
-          icon: "breakfast",
+          icon: "snacks",
         },
         {
           time: "08:00 AM",
@@ -125,7 +125,7 @@ function AlibagNavgaon() {
         {
           time: "11:00 AM",
           activity: "Checkout from the camp with wonderful memories",
-          icon: "checkout",
+          icon: "checkin",
         },
       ],
     },

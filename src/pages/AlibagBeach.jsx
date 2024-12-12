@@ -123,7 +123,7 @@ function AlibagBeach() {
         {
           time: "07:00 AM",
           activity: "Wake up, enjoy the breeze, freshen up, and have breakfast",
-          icon: "breakfast",
+          icon: "snacks",
         },
         {
           time: "09:00 AM",
@@ -134,7 +134,7 @@ function AlibagBeach() {
         {
           time: "11:00 AM",
           activity: "Checkout from the camp with wonderful memories",
-          icon: "checkout",
+          icon: "checkin",
         },
       ],
     },
@@ -155,7 +155,7 @@ function AlibagBeach() {
         </Box>
         {/* TrekComponent with 30% width */}
         <Box flex="3">
-          <TrekComponent trekName="Alibag Beach Camp" />
+          <TrekComponent trekName="Alibaug Beach Camping" />
         </Box>
       </Flex>
 

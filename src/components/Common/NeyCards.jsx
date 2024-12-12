@@ -114,7 +114,7 @@ const NeyCards = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/campingData');
+            const response = await axios.get('https://restate-json.onrender.com/campingData');
              console.log(response.data);
             setCampingData(response.data);
         } catch (error) {

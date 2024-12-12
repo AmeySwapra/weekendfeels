@@ -55,8 +55,8 @@ function PawnaRiver() {
           events: [
             { time: '12:30 AM', activity: 'Live guitarist/band music (Only on Saturdays)', icon: 'guitar' },
             { time: '06:00 AM', activity: 'Wake up call, Enjoy the sunrise view', icon: 'sunrise' },
-            { time: '08:30 AM', activity: 'Breakfast will be served', icon: 'breakfast' },
-            { time: '11:00 AM', activity: 'Checkout from the campsite', icon: 'checkout' }
+            { time: '08:30 AM', activity: 'Breakfast will be served', icon: 'snacks' },
+            { time: '11:00 AM', activity: 'Checkout from the campsite', icon: 'checkin' }
           ]
         }
       ];
@@ -77,7 +77,7 @@ function PawnaRiver() {
         </Box>
         {/* TrekComponent with 30% width */}
         <Box flex="3">
-          <TrekComponent trekName="PAWANA RIVERSIDE-CAMPING" />
+          <TrekComponent trekName="Pawna Riverside Camping" />
         </Box>
       </Flex>
 

@@ -76,9 +76,9 @@ function Pwanalake() {
       day: "Day 2",
       events: [
         { time: "06:00 AM", activity: "You will have a wake-up call so that can witness the mesmerizing sunrise view.", icon: "sunrise" },
-        { time: "08:00 AM", activity: "You will be served tea and breakfast to kickstart your day.", icon: "breakfast" },
+        { time: "08:00 AM", activity: "You will be served tea and breakfast to kickstart your day.", icon: "tea" },
         { time: "09:00 AM", activity: "You can go for speed boating or kayaking at an additional cost. This is not included in the package. Scroll down to FAQ for more details on this.", icon: "kayaking" },
-        { time: "11:00 AM", activity: "Finally it will be time to check out from the campsite.", icon: "checkout" }
+        { time: "11:00 AM", activity: "Finally it will be time to check out from the campsite.", icon: "checkin" }
       ]
     }
   ];
@@ -98,7 +98,7 @@ function Pwanalake() {
         </Box>
         {/* TrekComponent with 30% width */}
         <Box flex="3">
-          <TrekComponent trekName="Pawna Lake" />
+          <TrekComponent trekName="Pawna Lake Camping" />
         </Box>
       </Flex>
 

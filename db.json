@@ -27,7 +27,7 @@
     {
       "id": 3,
       "title": "Pawna Riverside Camping",
-      "image": "/assets/camp/list (1).jpg",
+      "image": "/assets/camp/list (3).jpg",
       "date": "9 December 2024",
       "location": "Pune, Mumbai",
       "duration": "1 Day / 1 Night",
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "title": "Alibaug Nagaon Beach Camping",
-      "image": "/assets/camp/list (1).jpg",
+      "image": "/assets/camp/list (4).jpg",
       "date": "9 December 2024",
       "location": "Pune, Mumbai",
       "duration": "1 Day / 1 Night",
@@ -51,7 +51,7 @@
     {
       "id": 6,
       "title": "Bhandardara Camping",
-      "image": "/assets/camp/list (1).jpg",
+      "image": "/assets/camp/list (5).jpg",
       "date": "13 December 2024",
       "location": "Mumbai, Nashik",
       "duration": "1 Day / 1 Night",
@@ -75,7 +75,7 @@
     {
       "id": 8,
       "title": "Alibaug Beach Camping",
-      "image": "/assets/camp/list (1).jpg",
+      "image": "/assets/camp/list (6).jpg",
       "date": "10 December 2024",
       "location": "Pune, Mumbai",
       "duration": "1 Day / 1 Night",
@@ -430,7 +430,7 @@
     {
       "id": 1,
       "name": "Pawna Lake Camping",
-      "imageUrl": "img/gallery/11/list.jpg",
+      "imageUrl": "/assets/camp/list (1).jpg",
       "originalPrice": 2999,
       "finalPrice": 1799,
       "lockPrice": 899,
@@ -441,7 +441,7 @@
     {
       "id": 2,
       "name": "Alibaug Beach Camping",
-      "imageUrl": "img/gallery/87/list.jpg",
+      "imageUrl": "/assets/camp/list (2).jpg",
       "originalPrice": 2999,
       "finalPrice": 1999,
       "lockPrice": 999,
@@ -452,7 +452,7 @@
     {
       "id": 3,
       "name": "Panshet Dam Camping",
-      "imageUrl": "img/gallery/72/list.jpg",
+      "imageUrl": "/assets/camp/list (3).jpg",
       "originalPrice": 2199,
       "finalPrice": 1799,
       "lockPrice": 899,
@@ -463,7 +463,7 @@
     {
       "id": 4,
       "name": "Alibaug Nagaon Beach Camping",
-      "imageUrl": "img/gallery/91/list.jpg",
+      "imageUrl": "/assets/camp/list (4).jpg",
       "originalPrice": 2999,
       "finalPrice": 1799,
       "lockPrice": 899,
@@ -474,7 +474,7 @@
     {
       "id": 5,
       "name": "Pawna Riverside Camping",
-      "imageUrl": "img/gallery/92/list.jpg",
+      "imageUrl": "/assets/camp/list (5).jpg",
       "originalPrice": 2999,
       "finalPrice": 1999,
       "lockPrice": 999,
@@ -485,7 +485,7 @@
     {
       "id": 6,
       "name": "Bhandardara camping",
-      "imageUrl": "img/gallery/93/list.jpg",
+      "imageUrl": "/assets/camp/list (1).jpg",
       "originalPrice": 1799,
       "finalPrice": 1499,
       "lockPrice": 799,
@@ -496,7 +496,7 @@
     {
       "id": 7,
       "name": "Malshej Ghat Lakeside camping",
-      "imageUrl": "img/gallery/94/list.jpg",
+      "imageUrl": "/assets/camp/list (6).jpg",
       "originalPrice": 1999,
       "finalPrice": 1299,
       "lockPrice": 699,

@@ -16,7 +16,7 @@ const ImageGallery = ({ images }) => {
   };
 
   return (
-    <Box position="relative" width="100%" maxWidth="900px" margin="0 auto" borderRadius="5px" overflow="hidden">
+    <Box position="relative" id='photos' width="100%" maxWidth="900px" margin="0 auto" borderRadius="5px" overflow="hidden">
       <Flex direction="column" align="center" justify="center" position="relative">
         {/* Image */}
         <Image

@@ -1,77 +1,148 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Text, Button, Stack, Heading } from '@chakra-ui/react';
-import DatePicker from 'react-datepicker';
+import React, { useState, useEffect } from "react";
+import {
+  Box,
+  Text,
+  Button,
+  Stack,
+  Heading,
+  useToast,
+} from "@chakra-ui/react";
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { addDays } from 'date-fns'; // Import to calculate next 7 days
+import { addDays } from "date-fns"; 
+import { Link } from "react-router-dom";
 
 const TrekComponent = ({ trekName }) => {
-  const [selectedDate, setSelectedDate] = useState(new Date()); // Default to current date
+  const [selectedDate, setSelectedDate] = useState(null); 
   const [highlightedDates, setHighlightedDates] = useState([]);
+  const [isValidDate, setIsValidDate] = useState(false); 
+  const toast = useToast();
 
-  // Calculate the next 7 days including today
+  
   useEffect(() => {
     const today = new Date();
-    const next7Days = Array.from({ length: 8 }, (_, index) => addDays(today, index));
+    const next7Days = Array.from({ length: 8 }, (_, index) =>
+      addDays(today, index)
+    );
     setHighlightedDates(next7Days);
   }, []);
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
+    setIsValidDate(true); 
+  };
+
+  const handleBookNowClick = (e) => {
+    if (!selectedDate) {
+      e.preventDefault(); 
+      setIsValidDate(false); 
+      toast({
+        title: "Date Required",
+        description: "Please select a date to proceed.",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
+        position: "top",
+      });
+    }
   };
 
   return (
-    <Box maxWidth="500px" margin="auto" padding="4" borderRadius="md" boxShadow="md">
-      {/* Heading */}
-      <Heading as="h2" size="lg" textAlign="center" marginBottom="4">{trekName}</Heading>
+    <Box
+      maxWidth="500px"
+      margin="auto"
+      padding="4"
+      borderRadius="md"
+      boxShadow="md"
+    >
+      
+      <Heading as="h2" size="lg" textAlign="center" marginBottom="4">
+        {trekName}
+      </Heading>
 
-      {/* Ribbon section */}
-      <Stack direction="row" spacing={4} align="center" justify="center" marginBottom="4">
-        <Box padding="1" backgroundColor="orange.300" color="white" borderRadius="md" fontSize="sm">
+      
+      <Stack
+        direction="row"
+        spacing={4}
+        align="center"
+        justify="center"
+        marginBottom="4"
+      >
+        <Box
+          padding="1"
+          backgroundColor="orange.300"
+          color="white"
+          borderRadius="md"
+          fontSize="sm"
+        >
           PARTIAL PAYMENT AVAILABLE
         </Box>
-        <Box padding="1" backgroundColor="green.300" color="white" borderRadius="md" fontSize="sm">
+        <Box
+          padding="1"
+          backgroundColor="green.300"
+          color="white"
+          borderRadius="md"
+          fontSize="sm"
+        >
           ADVENTURE
         </Box>
       </Stack>
 
-      {/* View More Photos Button at the top of Calendar */}
+    
       <Box textAlign="center" marginBottom="4">
         <Button
           variant="link"
-          background={'#f0ad4e'}
+          background={"#f0ad4e"}
           leftIcon={<i className="fa fa-camera" />}
-          h={'60px'}
-          w={'200px'}
-          color={'black'}
+          h={"60px"}
+          w={"200px"}
+          color={"black"}
         >
           View More Photos
         </Button>
       </Box>
 
-      {/* Calendar with DatePicker */}
-      <Box textAlign="center" marginBottom="4">
+     
+      <Box
+        textAlign="center"
+        marginBottom="4"
+        borderWidth="2px"
+        borderColor={isValidDate ? "green.400" : "red.400"} 
+        borderRadius="md"
+        padding="4"
+      >
         <Text>Select Check-in Date</Text>
         <DatePicker
           selected={selectedDate}
           onChange={handleDateChange}
           inline
-          highlightDates={highlightedDates} // Highlight the current date and the next 7 days
+          highlightDates={highlightedDates}
           dayClassName={(date) => {
-            // Add custom styles to highlight the dates
-            if (highlightedDates.some(d => d.getDate() === date.getDate() && d.getMonth() === date.getMonth())) {
-              return 'highlighted-day'; // Custom class for highlighted dates
+            if (
+              highlightedDates.some(
+                (d) =>
+                  d.getDate() === date.getDate() &&
+                  d.getMonth() === date.getMonth()
+              )
+            ) {
+              return "highlighted-day";
             }
-            return '';
+            return "";
           }}
           dateFormat="dd/MM/yyyy"
         />
       </Box>
 
-      {/* Book Now Button at the bottom of Calendar */}
+   
       <Box textAlign="center">
-        <Button background={'#ea7e06'} width="half" color={'white'}>
-          BOOK NOW
-        </Button>
+        <Link
+          to={`/booking?trekName=${trekName}`}
+          onClick={handleBookNowClick}
+        >
+          <Button background={"#ea7e06"} width="half" color={"white"}>
+            BOOK NOW
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

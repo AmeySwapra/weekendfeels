@@ -25,7 +25,7 @@ const trekDetails = [
     originalPrice: 1499,
     discount: "33% off",
     discountedPrice: 999,
-    link: "/Triund-Trek-51",
+    link: "triund-trek",
   },
 ];
 

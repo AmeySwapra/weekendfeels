@@ -123,12 +123,12 @@ function PanchetDam() {
           time: "08:00 AM",
           activity:
             "You will be served tea and breakfast to kickstart your day.",
-          icon: "breakfast",
+          icon: "snacks",
         },
         {
           time: "11:00 AM",
           activity: "Finally it will be time to check out from the campsite.",
-          icon: "checkout",
+          icon: "checkin",
         },
       ],
     },
@@ -149,7 +149,7 @@ function PanchetDam() {
         </Box>
         {/* TrekComponent with 30% width */}
         <Box flex="3">
-          <TrekComponent trekName="Panshet Dam" />
+          <TrekComponent trekName="Panshet Dam Camping" />
         </Box>
       </Flex>
 

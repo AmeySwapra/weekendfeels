@@ -3,7 +3,10 @@ import { FaCheckCircle } from 'react-icons/fa'; // Check circle icon
 
 function SideSection({ placeName }) {
   // Construct the Google Maps URL dynamically using the placeName prop
-  const mapURL = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${placeName}&zoom=10&maptype=roadmap`;
+  const key = import.meta.env.VITE_GOOGLE_KEY;
+  
+  const mapURL = `https://www.google.com/maps/embed/v1/place?key=${key}&q=${placeName}&zoom=10&maptype=roadmap`;
+
 
   return (
     <Box className="col-md-4 col-lg-4 p-0" textAlign="center" paddingTop="10px" height="fit-content">
