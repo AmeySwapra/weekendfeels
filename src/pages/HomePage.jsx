@@ -5,7 +5,7 @@ import Testimonial from "../components/Testimoinal";
 import Carousel from "../components/Carousel";
 import CampingSlider from "../components/CampingSlider";
 import Exp from "../components/Exp";
-import BlogSection from "../components/Blogsection";
+import BlogSection from "../components/BlogSection";
 
 
 function HomePage() {
