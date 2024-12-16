@@ -1,8 +1,8 @@
 import { Box, Text, List, ListItem, Icon, VStack, HStack } from '@chakra-ui/react';
-import { FaCheckCircle } from 'react-icons/fa'; // Check circle icon
+import { FaCheckCircle } from 'react-icons/fa'; 
 
 function SideSection({ placeName }) {
-  // Construct the Google Maps URL dynamically using the placeName prop
+
   const key = import.meta.env.VITE_GOOGLE_KEY;
   
   const mapURL = `https://www.google.com/maps/embed/v1/place?key=${key}&q=${placeName}&zoom=10&maptype=roadmap`;
@@ -10,9 +10,7 @@ function SideSection({ placeName }) {
 
   return (
     <Box className="col-md-4 col-lg-4 p-0" textAlign="center" paddingTop="10px" height="fit-content">
-      {/* Location Section */}
-     
-      {/* Embed Google Map with coordinates */}
+    
       <Box mt={4} display="flex" flexDirection="column" alignItems="center">
         <Text fontWeight="bold" mb={2}>
           Map Location
@@ -22,12 +20,12 @@ function SideSection({ placeName }) {
           height="300"
           loading="lazy"
           allowFullScreen
-          src={mapURL} // Dynamically use mapURL
+          src={mapURL} 
           style={{ border: '0', borderRadius: '8px' }}
         ></iframe>
       </Box>
 
-      {/* Why Weekend Feels Section */}
+    
       <Box mt={6} p={4} borderRadius="lg" boxShadow="md" backgroundColor="gray.50">
        <Box background={'#ea7e06'} color={'white'}>
        <Text fontWeight="bold" fontSize="xl" mb={4} textAlign="center">

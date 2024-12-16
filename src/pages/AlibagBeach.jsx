@@ -5,6 +5,10 @@ import Footer from "../components/Common/Footer";
 import Includes from "../components/details-component/Includes";
 import Timeline from "../components/details-component/TimeLine";
 import TrekComponent from "../components/details-component/TrekComponent";
+import ImageGallery from "../components/details-component/ImageGallery";
+import SideSection from "../components/details-component/SideSection";
+import OptionNavbar from "../components/details-component/OptionNavbar";
+import PhotoGallery from "../components/details-component/PhotoGallery";
 import img1 from "../assets/trek/01-Triund_Trek.jpg";
 import img2 from "../assets/trek/02-Triund_Trek.jpg";
 import img3 from "../assets/trek/08-Triund_Trek.jpg";
@@ -14,10 +18,6 @@ import img6 from "../assets/trek/06-Triund_Trek.jpg";
 import img7 from "../assets/trek/07-Triund_Trek.jpg";
 import img8 from "../assets/trek/08-Triund_Trek.jpg";
 import img9 from "../assets/trek/09-Triund_Trek.jpg";
-import ImageGallery from "../components/details-component/ImageGallery";
-import SideSection from "../components/details-component/SideSection";
-import OptionNavbar from "../components/details-component/OptionNavbar";
-import PhotoGallery from "../components/details-component/PhotoGallery";
 import pimg1 from "../assets/trek/001.jpg";
 import pimg2 from "../assets/trek/002.jpg";
 import pimg3 from "../assets/trek/003.jpg";
@@ -139,38 +139,45 @@ function AlibagBeach() {
       ],
     },
   ];
+
   return (
     <>
       <Navbar />
       <Flex
-        direction="row"
+        direction={{ base: "column", lg: "row" }}
         justify="space-between"
         wrap="wrap"
         p={5}
-        mt={"114px"}
+        mt={{ base: "80px", md: "114px" }}
       >
-        {/* Image Gallery with 70% width */}
-        <Box flex="7" mr={5}>
+        {/* Image Gallery - Responsive */}
+        <Box flex={{ base: "1", lg: "7" }} w={{ base: "100%", lg: "70%" }} mb={{ base: 5, lg: 0 }} mr={{ lg: 5 }}>
           <ImageGallery images={images} />
         </Box>
-        {/* TrekComponent with 30% width */}
-        <Box flex="3">
+        {/* TrekComponent - Responsive */}
+        <Box flex={{ base: "1", lg: "3" }} w={{ base: "100%", lg: "30%" }}>
           <TrekComponent trekName="Alibaug Beach Camping" />
         </Box>
       </Flex>
 
-      {/* Includes Section with 70% width */}
-      <Flex direction="row" justify="space-between" wrap="wrap" p={5}>
-        <Box flex="7" mr={5}>
+      {/* Includes and Timeline Section */}
+      <Flex
+        direction={{ base: "column", lg: "row" }}
+        justify="space-between"
+        wrap="wrap"
+        p={5}
+      >
+        <Box flex={{ base: "1", lg: "7" }} w={{ base: "100%", lg: "70%" }} mb={{ base: 5, lg: 0 }} mr={{ lg: 5 }}>
           <Includes />
           <OptionNavbar overviewText={overviewText} />
           <Timeline timelineData={timelineData} />
         </Box>
-        <Box flex="3">
+        <Box flex={{ base: "1", lg: "3" }} w={{ base: "100%", lg: "30%" }}>
           <SideSection placeName="Alibag Beach" />
         </Box>
       </Flex>
 
+      {/* Photo Gallery */}
       <PhotoGallery images={pimages} />
       <Footer />
     </>

@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
-import { Box, Image, Flex, IconButton, useBreakpointValue } from '@chakra-ui/react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import React, { useState } from "react";
+import {
+  Box,
+  Image,
+  Flex,
+  IconButton,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const ImageGallery = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,17 +21,44 @@ const ImageGallery = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
   };
 
+  // Responsive sizes for images and buttons
+  const imageBoxSize = useBreakpointValue({
+    base: "100%", // Full width on mobile
+    md: "75%", // 75% width on tablets
+    lg: "70%", // 70% width on desktops
+  });
+
+  const buttonSize = useBreakpointValue({
+    base: "30px", // Smaller buttons on mobile
+    md: "40px", // Medium size on tablets
+    lg: "50px", // Larger buttons on desktops
+  });
+
   return (
-    <Box position="relative" id='photos' width="100%" maxWidth="900px" margin="0 auto" borderRadius="5px" overflow="hidden">
-      <Flex direction="column" align="center" justify="center" position="relative">
+    <Box
+      position="relative"
+      id="photos"
+      width={imageBoxSize}
+      margin="0 auto"
+      borderRadius="5px"
+      overflow="hidden"
+      boxShadow="md"
+    >
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+        position="relative"
+      >
         {/* Image */}
         <Image
           src={images[currentIndex]}
           alt={`Gallery Image ${currentIndex + 1}`}
-          boxSize="auto"
-          maxHeight="406px"
+          width="100%"
+          maxHeight="500px"
           objectFit="cover"
         />
+
         {/* Navigation Buttons */}
         <IconButton
           aria-label="Previous"
@@ -37,6 +70,7 @@ const ImageGallery = ({ images }) => {
           transform="translateY(-50%)"
           onClick={goToPrev}
           colorScheme="teal"
+          size={buttonSize}
         />
         <IconButton
           aria-label="Next"
@@ -48,8 +82,10 @@ const ImageGallery = ({ images }) => {
           transform="translateY(-50%)"
           onClick={goToNext}
           colorScheme="teal"
+          size={buttonSize}
         />
       </Flex>
+
       {/* Bullet Navigation (optional) */}
       <Flex justify="center" mt="2">
         {images.map((_, index) => (
@@ -60,7 +96,7 @@ const ImageGallery = ({ images }) => {
             height="10px"
             borderRadius="full"
             margin="0 5px"
-            backgroundColor={currentIndex === index ? 'teal.500' : 'gray.400'}
+            backgroundColor={currentIndex === index ? "teal.500" : "gray.400"}
             onClick={() => setCurrentIndex(index)}
             cursor="pointer"
           />
