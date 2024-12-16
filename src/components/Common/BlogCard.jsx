@@ -8,6 +8,7 @@ import {
   Grid,
   Button,
   HStack,
+  Flex,
 } from "@chakra-ui/react";
 
 const Card = ({ title, excerpt, imageUrl, link }) => {
@@ -70,15 +71,15 @@ const BlogCard = ({ cardsData }) => {
   const totalPages = Math.ceil(cardsData.length / itemsPerPage);
 
   return (
-    <Box p={4} px={{ base: 4, md: 8, lg: 24 }}>
+    <Box p={4} px={{ base: 4, md: 8, lg: 24 }} overflowX="hidden">
+      {/* Responsive Grid for Cards */}
       <Grid
         templateColumns={{
           base: "repeat(1, 1fr)",
           sm: "repeat(2, 1fr)",
-          md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
+          md: "repeat(3, 1fr)",
         }}
-        gap={"100px"}
+        gap={{ base: "20px", md: "40px", lg: "60px" }}
       >
         {currentItems.map((card, index) => (
           <Card
@@ -91,8 +92,17 @@ const BlogCard = ({ cardsData }) => {
         ))}
       </Grid>
 
-      <HStack mt={6} justify="center">
+      {/* Responsive Pagination */}
+      <Flex
+        mt={6}
+        justify="center"
+        flexWrap="wrap"
+        gap={2}
+        p={2}
+        overflowX="hidden"
+      >
         <Button
+          size={{ base: "sm", md: "md" }}
           onClick={() => paginate(currentPage - 1)}
           isDisabled={currentPage === 1}
         >
@@ -102,6 +112,7 @@ const BlogCard = ({ cardsData }) => {
         {[...Array(totalPages)].map((_, index) => (
           <Button
             key={index}
+            size={{ base: "sm", md: "md" }}
             onClick={() => paginate(index + 1)}
             variant={currentPage === index + 1 ? "solid" : "outline"}
           >
@@ -110,12 +121,13 @@ const BlogCard = ({ cardsData }) => {
         ))}
 
         <Button
+          size={{ base: "sm", md: "md" }}
           onClick={() => paginate(currentPage + 1)}
           isDisabled={currentPage === totalPages}
         >
           Next
         </Button>
-      </HStack>
+      </Flex>
     </Box>
   );
 };
