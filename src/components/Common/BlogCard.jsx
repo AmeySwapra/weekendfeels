@@ -80,6 +80,7 @@ const BlogCard = ({ cardsData }) => {
           md: "repeat(3, 1fr)",
         }}
         gap={{ base: "20px", md: "40px", lg: "60px" }}
+        px={{ base: 4, md: 8, lg: 24 }}
       >
         {currentItems.map((card, index) => (
           <Card
