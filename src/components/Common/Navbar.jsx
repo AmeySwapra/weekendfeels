@@ -110,7 +110,7 @@ const Navbar = () => {
               >
                 {[
                   { name: "Home", link: "/" },
-                  { name: "Camps", link: "/camps" },
+                  { name: "Camps", link: "/camp" },
                   { name: "Treks", link: "/trek" },
                   {
                     name: "NYE'25 Special",
@@ -123,7 +123,7 @@ const Navbar = () => {
                 ].map(({ name, link, isExternal, style }) => (
                   <Link
                     key={name}
-                    href={link}
+                    to={link}
                     isExternal={isExternal}
                     style={style}
                     _hover={{ textDecoration: "none", color: "yellow.300" }}
