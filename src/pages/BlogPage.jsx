@@ -11,8 +11,8 @@ function BlogPage() {
     const fetchData = async () => {
         try {
             const response = await axios.get('https://restate-json.onrender.com/cards');
-            console.log(response.data); // The data is already parsed in `response.data`
-            setData(response.data); // Set the state with the fetched data
+            console.log(response.data); 
+            setData(response.data); 
         } catch (error) {
             console.error('Error fetching data:', error);
         }

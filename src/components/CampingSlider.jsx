@@ -95,20 +95,24 @@ const CampingCard = ({
         borderRadius="lg"
         overflow="hidden"
         boxShadow="lg"
-        p="4"
-        m={"10px"}
+        p={{ base: "3", md: "4" }}
+        m={{ base: "5px", md: "10px" }}
       >
         <Image
           src={image}
           alt={name}
           width="100%"
-          height="200px"
+          height={{ base: "150px", md: "200px" }}
           objectFit="cover"
           transition="transform 0.2s"
           _hover={{ transform: "scale(1.05)" }}
         />
         <VStack align="start" spacing="2" mt="4">
-          <Text fontSize="lg" fontWeight="bold" color="teal.600">
+          <Text
+            fontSize={{ base: "md", md: "lg" }}
+            fontWeight="bold"
+            color="teal.600"
+          >
             {name}
           </Text>
           <Flex align="center">
@@ -120,14 +124,18 @@ const CampingCard = ({
             </Text>
           </Flex>
           <Flex justify="space-between" width="100%">
-            <Text fontSize="sm" color="gray.500" textDecoration="line-through">
+            <Text
+              fontSize="sm"
+              color="gray.500"
+              textDecoration="line-through"
+            >
               ₹{originalPrice}
             </Text>
             <Text fontSize="sm" color="red.500">
               {discount}% Off
             </Text>
           </Flex>
-          <Text fontSize="xl" fontWeight="bold" color="teal.700">
+          <Text fontSize={{ base: "lg", md: "xl" }} fontWeight="bold" color="teal.700">
             ₹{finalPrice}
           </Text>
           <Link to={`/${link}`}>
@@ -154,13 +162,11 @@ const CampingSlider = () => {
         icon={<ChevronRightIcon />}
         variant="ghost"
         fontSize={"40px"}
-        fontWeight={"500"}
         position="absolute"
         top="50%"
         right="-30px"
         transform="translateY(-50%)"
         zIndex="2"
-        opacity="1"
         _hover={{ opacity: 1 }}
       />
     ),
@@ -170,13 +176,11 @@ const CampingSlider = () => {
         icon={<ChevronLeftIcon />}
         variant="ghost"
         fontSize={"40px"}
-        fontWeight={"500"}
         position="absolute"
         top="50%"
-        left="-70px"
+        left="-30px"
         transform="translateY(-50%)"
         zIndex="2"
-        opacity="1"
         _hover={{ opacity: 1 }}
       />
     ),
@@ -185,27 +189,29 @@ const CampingSlider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          arrows: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <Box maxW="1200px" mx="auto" p="6" position="relative">
+    <Box maxW="1200px" mx="auto" p="4" position="relative">
       <Text
-        fontSize="50px"
+        fontSize={{ base: "2xl", md: "3xl" }}
         color={"teal.400"}
         fontWeight="400"
         textAlign="center"
         mb="6"
       >
-        Where To Next ?
+        Where To Next?
       </Text>
       <Slider {...sliderSettings}>
         {campingDestinations.map((destination) => (
@@ -215,11 +221,11 @@ const CampingSlider = () => {
       <Flex justify="center" mt="6">
         <Link to={"/camp"}>
           <Button
-            w={"300px"}
+            w={{ base: "200px", md: "300px" }}
             h={"50px"}
             background={"#f0ad4e"}
             borderRadius={"none"}
-            fontSize={"30px"}
+            fontSize={{ base: "md", md: "lg" }}
             fontWeight={"400"}
             _hover={{ background: "#f4f4f4", border: "2px solid black" }}
           >
@@ -232,4 +238,3 @@ const CampingSlider = () => {
 };
 
 export default CampingSlider;
-// 
