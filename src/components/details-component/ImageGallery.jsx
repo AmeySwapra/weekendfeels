@@ -12,7 +12,7 @@ const ImageGallery = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = images.length;
 
-  // Handle next and previous actions
+ 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
   };
@@ -21,17 +21,17 @@ const ImageGallery = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
   };
 
-  // Responsive sizes for images and buttons
+  
   const imageBoxSize = useBreakpointValue({
-    base: "100%", // Full width on mobile
-    md: "75%", // 75% width on tablets
-    lg: "70%", // 70% width on desktops
+    base: "100%", 
+    md: "75%", 
+    lg: "70%", 
   });
 
   const buttonSize = useBreakpointValue({
-    base: "30px", // Smaller buttons on mobile
-    md: "40px", // Medium size on tablets
-    lg: "50px", // Larger buttons on desktops
+    base: "30px", 
+    md: "40px", 
+    lg: "50px", 
   });
 
   return (

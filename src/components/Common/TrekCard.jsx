@@ -12,21 +12,20 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverArrow,
-  PopoverCloseButton,
-  PopoverHeader,
   PopoverBody,
+  Skeleton,
 } from "@chakra-ui/react";
 import { FaCalendarCheck, FaMapSigns, FaClock } from "react-icons/fa";
-import DatePicker from "react-datepicker"; // import the date picker
-import "react-datepicker/dist/react-datepicker.css"; // import styles for date picker
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
+import Loading from "./Loading"; // Import the Loading component
 
 const TrekCard = ({ trek }) => {
   return (
     <Center py={4}>
       <Box
-        w={{ base: "85%", md: "100%", lg: "100%" }} 
+        w={{ base: "85%", md: "100%", lg: "100%" }}
         border="1px solid #e2e8f0"
         borderRadius="md"
         overflow="hidden"
@@ -55,7 +54,7 @@ const TrekCard = ({ trek }) => {
                 alt={trek.title}
                 objectFit="cover"
                 w="100%"
-                h="200px" // Reduced image height
+                h="200px"
               />
               {/* Dark Overlay */}
               <Box
@@ -153,24 +152,26 @@ const TrekCard = ({ trek }) => {
   );
 };
 
-const TrekCards = ({ trekDetails = [] }) => {
-  
+const TrekCards = ({ trekDetails = [], isLoading }) => {
   return (
     <Box p={4} px={{ base: 4, md: 8, lg: 24 }}>
-     
-      <Grid
-        templateColumns={{
-          base: "repeat(1, 1fr)", 
-          sm: "repeat(2, 1fr)",    
-          md: "repeat(2, 1fr)",    
-          lg: "repeat(3, 1fr)",    
-        }}
-        gap={6} 
-      >
-        {trekDetails.map((trek) => (
-          <TrekCard key={trek.id} trek={trek} />
-        ))}
-      </Grid>
+      {isLoading ? (
+        <Loading /> 
+      ) : (
+        <Grid
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(2, 1fr)",
+            lg: "repeat(3, 1fr)",
+          }}
+          gap={6}
+        >
+          {trekDetails.map((trek) => (
+            <TrekCard key={trek.id} trek={trek} />
+          ))}
+        </Grid>
+      )}
     </Box>
   );
 };
